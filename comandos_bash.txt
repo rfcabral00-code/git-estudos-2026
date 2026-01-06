@@ -17,5 +17,18 @@ git commit -m "Primeiros comandos bash" -> Cria e explica o commit (o que foi fe
 git config --global user.e-mail"rf.cabral00@gmail.com" -> cria o usuário git 
 nano -> cria arquivo dentro da pasta
 git log -> histórico de todos os commits
-git add. ->
+git add. -> adiciona tudo da mesma pasta (pasta atual) para commitar
+
+
+## Fluxo de trabalho
+
+1. Criar diretório do projeto
+2. Iniciar o git (git iniy.)
+3. Edita ou cria arquivos
+4. git status
+5. git add <nome arquivo>
+6. git status
+7. git commit -m "mensagem"
+8. git status
+9. Volta para o passo 3.
 
