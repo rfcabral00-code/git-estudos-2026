@@ -5,8 +5,8 @@ cd -> move entre diretórios
 pwd -> mostra diretório de trabalho
 mkdir -> cria pasta no diretório
 cat -> existe conteúdo do arquivo o que tem dentro de um arquivo
-rm -rf.git -> exclui arquivo ou diretório
-commit log -> histórico de todos os commits
+rm -rf.git -> exclui arquivo ou diretório de forma forçada
+
 
 Comandos git:
 
@@ -16,4 +16,6 @@ git add -> adicionado o que eu quero que va para o commit (ou o que eu quero que
 git commit -m "Primeiros comandos bash" -> Cria e explica o commit (o que foi feito)
 git config --global user.e-mail"rf.cabral00@gmail.com" -> cria o usuário git 
 nano -> cria arquivo dentro da pasta
+git log -> histórico de todos os commits
+git add. ->
 
