@@ -1,7 +1,17 @@
+
+Comandos área "cmd" do git
 ls -> lista arquivos
 cd -> move entre diretórios
 pwd -> mostra diretório de trabalho
 mkdir -> cria pasta no diretório
-cat -> mostra o que tem dentro de um arquivo
+cat -> existe conteúdo do arquivo o que tem dentro de um arquivo
+rm -rf.git -> exclui arquivo ou diretório
+
+Comandos git:
+
 git  init -> transforma a pasta normal em "pasta especial" 
-rm -rf.git -> exclui a pasta git
+git status -> status dos arquivos que foram ou não versionados
+git add -> adicionado o que eu quero que va para o commit (ou o que eu quero que seja versionado)
+git commit -m "Primeiros comandos bash" -> Cria e explica o commit (o que foi feito)
+git config --global user.e-mail"rf.cabral00@gmail.com" -> cria o usuário git 
+nano -> cria arquivo dentro da pasta
