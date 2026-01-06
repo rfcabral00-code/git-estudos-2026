@@ -1,0 +1,7 @@
+ls -> lista arquivos
+cd -> move entre diretórios
+pwd -> mostra diretório de trabalho
+mkdir -> cria pasta no diretório
+cat -> mostra o que tem dentro de um arquivo
+git  init -> transforma a pasta normal em "pasta especial" 
+rm -rf.git -> exclui a pasta git
