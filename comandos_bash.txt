@@ -19,6 +19,19 @@ nano -> cria arquivo dentro da pasta
 git log -> histórico de todos os commits
 git add. -> adiciona tudo da mesma pasta (pasta atual) para commitar
 git diff -> mostra o que esta de diferente no arquivo modificado
+git add . serve para adicionar todas as mudanças de arquivos novos ou modificados no diretório atual 
+Git reset: Tira um arquivo do commit
+Ex: git reset nomeArquivo.txt
+Git checkout -b:  Cria uma brech secundaria.
+ex: git checkout -b nomeBranchSegundaria
+Git branch: Mostra todas as branch’s do projeto.
+Git checkout main: Retorna pra breach main. (Não tem o -b, pq vc retorna. O -b serve para criar uma nova)
+Git merge: Para trazer o que está em outra branch.
+Ex: git merge branchSegundaria
+Merge = misturar 
+Git branch -D: Exclui a branch
+Ex: git branch-d secundária 
+Git branch: Ver todas as branch’s
 
 
 ## Fluxo de trabalho
