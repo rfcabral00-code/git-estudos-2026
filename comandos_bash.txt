@@ -18,6 +18,7 @@ git config --global user.e-mail"rf.cabral00@gmail.com" -> cria o usuário git
 nano -> cria arquivo dentro da pasta
 git log -> histórico de todos os commits
 git add. -> adiciona tudo da mesma pasta (pasta atual) para commitar
+git diff -> mostra o que esta de diferente no arquivo modificado
 
 
 ## Fluxo de trabalho
