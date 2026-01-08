@@ -1,4 +1,4 @@
-# git-estudos-2026
+# Git-estudos-2026
 Estudos sobre Git
 
 Guia de Estudos de Git — Passo a Passo para Iniciantes
