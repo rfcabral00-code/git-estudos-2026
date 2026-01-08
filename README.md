@@ -1,3 +1,32 @@
+## 📌 Sumário
+
+- [Sobre o repositório](#git-estudos-2026)
+- [Guia de Estudos de Git](#guia-de-estudos-de-git--passo-a-passo-para-iniciantes)
+
+- [Dia 1 e 2 — Fundamentos do Git](#dia-1-e-2)
+  - [O que é o Git](#o-que-é-o-git-em-poucas-palavras)
+  - [Navegando pelo terminal](#1-navegando-pelo-terminal)
+  - [Iniciando um repositório Git](#2-iniciando-um-repositório-git)
+  - [Ciclo básico do Git](#3-ciclo-básico-do-git)
+  - [Consultando histórico](#4-consultando-histórico)
+  - [Conectando ao GitHub](#5-conectando-ao-github)
+  - [Usando o repositório em outro computador](#6-usando-o-repositório-em-outro-computador)
+  - [Fluxo recomendado de trabalho](#7-fluxo-recomendado-de-trabalho)
+
+- [Dia 3 — Branches, Conflitos e GitHub](#dia-3--branches-conflitos-github-vs-code-e-git-flow)
+  - [Branches](#branches--comandos-essenciais)
+  - [Merge](#merge--unindo-branches)
+  - [Resolvendo conflitos](#resolvendo-conflitos)
+  - [GitHub avançado](#github--uso-mais-aprofundado)
+  - [Forks](#forks--contribuindo-em-outros-projetos)
+  - [Integração com VS Code](#integração-do-git-com-o-visual-studio-code)
+  - [Git Flow](#git-flow--prática-e-padrões-utilizados)
+  - [Gitignore e Gitkeep](#gitignore-e-gitkeep--controle-de-arquivos-e-diretórios)
+
+- [Aprendizados por dia](#aprendizados-do-dia-3)
+- [Próximos estudos](#próximos-tópicos-planejados)
+- [Objetivo do repositório](#objetivo-do-repositório)
+
 # Git-estudos-2026
 Estudos sobre Git
 
@@ -495,6 +524,69 @@ git merge develop
 ✔ a main foi atualizada  
 ✔ o fluxo do Git Flow foi concluído corretamente  
 
+## Gitignore e Gitkeep — controle de arquivos e diretórios
+
+Nesta parte da aula foram estudados os arquivos **.gitignore** e **.gitkeep**, usados para controlar o que deve ou não ser versionado no repositório.
+
+---
+
+## .gitignore — ignorando arquivos no versionamento
+
+O arquivo `.gitignore` é utilizado para informar ao Git quais arquivos **não devem ser versionados**.
+
+Principais usos:
+
+✔ ignorar arquivos binários  
+✔ ignorar arquivos que não podem ser lidos ou editados  
+✔ evitar subir arquivos desnecessários para o repositório  
+
+Exemplo prático:
+
+Foi utilizado um arquivo `.pptx` como exemplo, pois arquivos binários não podem ser facilmente modificados ou revisados no GitHub.
+
+Dentro do arquivo `.gitignore`, foi adicionada a regra:
+
+*.pptx
+
+Com isso:
+
+✔ qualquer arquivo com extensão `.pptx` será ignorado pelo Git  
+✔ o arquivo não aparece no `git status`  
+✔ não é enviado para o repositório remoto  
+
+---
+
+## .gitkeep — versionando pastas vazias
+
+O Git não versiona pastas vazias por padrão.
+
+Para resolver isso, foi utilizado o arquivo `.gitkeep`.
+
+Funcionamento:
+
+✔ cria-se um arquivo chamado `.gitkeep` dentro da pasta  
+✔ a pasta passa a ser versionada  
+✔ ao clonar o repositório, a estrutura de diretórios é mantida  
+
+Exemplo de uso:
+
+Foi criado um arquivo `.gitkeep` dentro de pastas organizadas no projeto, garantindo que:
+
+✔ a organização de diretórios seja preservada  
+✔ outros desenvolvedores recebam a estrutura completa ao clonar o repositório  
+
+---
+
+## Aprendizados sobre Gitignore e Gitkeep
+
+✔ nem todo arquivo deve ser versionado  
+✔ arquivos binários devem ser ignorados  
+✔ o `.gitignore` evita sujeira no repositório  
+✔ o `.gitkeep` garante a estrutura de pastas  
+✔ ambos ajudam na organização do projeto  
+
+
+
 ---
 
 ## Aprendizados do Dia 3
@@ -506,11 +598,6 @@ git merge develop
 ✔ GitHub vai além de backup de código  
 ✔ forks permitem colaboração segura  
 ✔ VS Code facilita o uso do Git sem substituir seus conceitos  
-
+✔ Importante para manter os dados, porém, para que ele não pese no versionamento
 ---
-
-## Próximos tópicos planejados
-
-- Gitkeep  
-- Gitignore  
 
