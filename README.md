@@ -23,7 +23,7 @@ Git é um sistema de controle de versão que permite:
 
 ---
 
-# 1) Navegando pelo terminal
+# Navegando pelo terminal
 
 | Comando | Explicação |
 |--------|---------|
@@ -43,7 +43,7 @@ Git é um sistema de controle de versão que permite:
 
 ---
 
-# 2) Iniciando um repositório Git
+# Iniciando um repositório Git
 
 Criar repositório:
 
@@ -65,7 +65,7 @@ Legenda:
 
 ---
 
-# 3) Ciclo básico do Git
+# Ciclo básico do Git
 
 Editar arquivos → adicionar ao stage → criar commit
 
@@ -103,7 +103,7 @@ Corrige explicação do git status
 
 ---
 
-# 4) Consultando histórico
+# Consultando histórico
 
 Histórico completo:
 
@@ -119,7 +119,7 @@ git log --oneline
 
 ---
 
-# 5) Conectando ao GitHub
+# Conectando ao GitHub
 
 Definir branch principal:
 
@@ -147,7 +147,7 @@ git push
 
 ---
 
-# 6) Usando o repositório em outro computador
+# Usando o repositório em outro computador
 
 Clonar:
 
@@ -164,7 +164,7 @@ git pull
 
 ---
 
-# 7) Fluxo recomendado de trabalho
+# Fluxo recomendado de trabalho
 
 Sempre seguir:
 
@@ -371,13 +371,77 @@ Fluxo básico:
 
 ## Aprendizados importantes do Dia 3
 
+
+
+## Integração do Git com o Visual Studio Code
+
+Neste momento do estudo, foi explorada a integração nativa do Git dentro do VS Code, observando como o versionamento funciona diretamente pela interface.
+
+### Funcionalidades observadas no VS Code
+
+✔ visualização de arquivos modificados  
+✔ identificação de alterações linha a linha no README  
+✔ staging de arquivos pela interface gráfica  
+✔ criação de commits sem usar o terminal  
+✔ atualização da branch `main` diretamente pelo VS Code  
+
+---
+
+### Testes realizados
+
+Durante o estudo foram feitos testes práticos:
+
+- modificação do arquivo `README.md`
+- verificação das mudanças no painel de Source Control
+- criação de commit pelo VS Code
+- envio das alterações para o GitHub (update da `main`)
+- validação do histórico de commits
+
+Esses testes ajudaram a entender melhor o fluxo visual do Git.
+
+---
+
+### Git Graph no VS Code
+
+Foi analisado o uso do **Git Graph** para:
+
+✔ visualizar branches  
+✔ acompanhar merges  
+✔ entender o histórico de commits  
+✔ observar a linha do tempo do projeto  
+
+O gráfico facilita a compreensão do fluxo do Git, principalmente para iniciantes.
+
+---
+
+### Terminal integrado (Bash)
+
+Também foi utilizado o **terminal Bash integrado ao VS Code**, permitindo:
+
+✔ executar comandos Git diretamente no editor  
+✔ checar o status do repositório (`git status`)  
+✔ realizar commits pelo terminal  
+✔ alternar entre interface gráfica e linha de comando  
+
+Isso mostrou que o VS Code não substitui o Git, mas facilita o uso.
+
+---
+
+## Aprendizados importante e adicionais do Dia 3
+
 ✔ trabalhar sempre em branches
 ✔ conflitos fazem parte do processo
 ✔ GitHub é mais que apenas um “backup”
 ✔ forks permitem colaboração sem acesso direto
+✔ o VS Code integra Git de forma nativa  
+✔ é possível commitar via interface ou terminal  
+✔ o Git Graph ajuda a visualizar o histórico  
+✔ a lógica do Git é a mesma dentro e fora do editor  
+
+---
 
 /## Próximos tópicos planejados
-- **Integração com VS Code**
+
 - **Git Flow**
 - **Gitkeep e Gitignore**
 
