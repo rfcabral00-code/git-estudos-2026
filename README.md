@@ -451,3 +451,6 @@ Isso mostrou que o VS Code não substitui o Git, mas facilita o uso.
 ✔ consolidar fundamentos do Git  
 ✔ registrar evolução dos estudos  
 ✔ servir como guia de consulta rápida
+
+
+obrigado ttheomewhy
