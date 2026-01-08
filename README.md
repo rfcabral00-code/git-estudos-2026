@@ -1,5 +1,8 @@
-# git-estudos-2026
+# Git-estudos-2026
 Estudos sobre Git
+
+Curso para iniciantes aprederem a trabalhar com versionamento de código e repositórios remotos com github.
+Além disso, também iremos trabalhar com gitflow ao final do curso e visual studio code.
 
 Guia de Estudos de Git — Passo a Passo para Iniciantes
 
@@ -7,6 +10,7 @@ Este repositório reúne minhas anotações e prática inicial de Git.
 O objetivo é entender **o que cada comando faz**, quando usar e como funciona o fluxo de versionamento.
 
 ---
+# Dia 1 e 2
 
 ## O que é o Git (em poucas palavras)
 
