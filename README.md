@@ -290,25 +290,28 @@ Neste dia, o foco foi aprofundar o uso de branches, entender conflitos, trabalha
 
 ---
 
-## Branches (revisão e aprofundamento)
+Dia 3 — Branches, Conflitos, GitHub, VS Code e Git Flow
+Branches — comandos básicos
 
-Branches permitem desenvolver funcionalidades de forma isolada, sem impactar diretamente a branch principal (`main`).
+Criar uma nova branch e entrar nela:
 
-### Criar uma branch e entrar nela
-```bash
 git checkout -b nome-da-branch
-Listar branches
+
+
+Listar todas as branches:
+
 git branch
 
-Voltar para a branch principal
+
+Voltar para a branch principal (main):
+
 git checkout main
 
-### Merge — unindo branches
+Merge — unindo branches
 
 O merge é usado para trazer o conteúdo de uma branch para outra.
 
-Fluxo correto:
-
+Fluxo correto
 git checkout main
 git merge nome-da-branch
 
@@ -316,7 +319,7 @@ git merge nome-da-branch
 ✔ o conteúdo da branch secundária é integrado à main
 ✔ os históricos são combinados
 
-### Resolvendo conflitos
+Resolvendo conflitos
 
 Conflitos acontecem quando:
 
@@ -339,7 +342,7 @@ git commit -m "Resolve conflito de merge"
 ✔ conflitos são normais
 ✔ fazem parte do fluxo real de trabalho
 
-## GitHub — uso mais aprofundado
+GitHub — uso mais aprofundado
 
 Neste dia foi estudado:
 
@@ -347,18 +350,17 @@ Neste dia foi estudado:
 ✔ sincronização com push e pull
 ✔ importância de sempre atualizar antes de enviar mudanças
 
-## Fluxo recomendado:
-
+Fluxo recomendado
 git pull
 git add .
 git commit -m "mensagem"
 git push
 
-## Forks — contribuindo em outros projetos
+Forks — contribuindo em outros projetos
 
 Fork é uma cópia de um repositório de outra pessoa para a sua conta no GitHub.
 
-Fluxo básico:
+Fluxo básico
 
 1️⃣ criar um fork no GitHub
 2️⃣ clonar o fork para o computador
@@ -369,116 +371,104 @@ Fluxo básico:
 ✔ usado para contribuir em projetos open source
 ✔ não altera o repositório original diretamente
 
-## Aprendizados importantes do Dia 3
+Integração do Git com o Visual Studio Code
 
+Foi explorada a integração nativa do Git dentro do VS Code, observando como o versionamento funciona diretamente pela interface.
 
+Funcionalidades observadas no VS Code
 
-## Integração do Git com o Visual Studio Code
+✔ visualização de arquivos modificados
+✔ identificação de alterações linha a linha no README
+✔ staging de arquivos pela interface gráfica
+✔ criação de commits sem usar o terminal
+✔ atualização da branch main diretamente pelo VS Code
 
-Neste momento do estudo, foi explorada a integração nativa do Git dentro do VS Code, observando como o versionamento funciona diretamente pela interface.
-
-### Funcionalidades observadas no VS Code
-
-✔ visualização de arquivos modificados  
-✔ identificação de alterações linha a linha no README  
-✔ staging de arquivos pela interface gráfica  
-✔ criação de commits sem usar o terminal  
-✔ atualização da branch `main` diretamente pelo VS Code  
-
----
-
-### Testes realizados
+Testes realizados
 
 Durante o estudo foram feitos testes práticos:
 
-- modificação do arquivo `README.md`
-- verificação das mudanças no painel de Source Control
-- criação de commit pelo VS Code
-- envio das alterações para o GitHub (update da `main`)
-- validação do histórico de commits
+modificação do arquivo README.md
+
+verificação das mudanças no painel de Source Control
+
+criação de commit pelo VS Code
+
+envio das alterações para o GitHub (update da main)
+
+validação do histórico de commits
 
 Esses testes ajudaram a entender melhor o fluxo visual do Git.
 
----
+Git Graph no VS Code
 
-### Git Graph no VS Code
+Foi analisado o uso do Git Graph para:
 
-Foi analisado o uso do **Git Graph** para:
-
-✔ visualizar branches  
-✔ acompanhar merges  
-✔ entender o histórico de commits  
-✔ observar a linha do tempo do projeto  
+✔ visualizar branches
+✔ acompanhar merges
+✔ entender o histórico de commits
+✔ observar a linha do tempo do projeto
 
 O gráfico facilita a compreensão do fluxo do Git, principalmente para iniciantes.
 
----
+Terminal integrado (Bash)
 
-### Terminal integrado (Bash)
+Também foi utilizado o terminal Bash integrado ao VS Code, permitindo:
 
-Também foi utilizado o **terminal Bash integrado ao VS Code**, permitindo:
-
-✔ executar comandos Git diretamente no editor  
-✔ checar o status do repositório (`git status`)  
-✔ realizar commits pelo terminal  
-✔ alternar entre interface gráfica e linha de comando  
+✔ executar comandos Git diretamente no editor
+✔ checar o status do repositório (git status)
+✔ realizar commits pelo terminal
+✔ alternar entre interface gráfica e linha de comando
 
 Isso mostrou que o VS Code não substitui o Git, mas facilita o uso.
 
----
-
-## Aprendizados importante e adicionais do Dia 3
+Aprendizados importantes do Dia 3
 
 ✔ trabalhar sempre em branches
 ✔ conflitos fazem parte do processo
 ✔ GitHub é mais que apenas um “backup”
 ✔ forks permitem colaboração sem acesso direto
-✔ o VS Code integra Git de forma nativa  
-✔ é possível commitar via interface ou terminal  
-✔ o Git Graph ajuda a visualizar o histórico  
-✔ a lógica do Git é a mesma dentro e fora do editor  
+✔ o VS Code integra Git de forma nativa
+✔ é possível commitar via interface ou terminal
+✔ o Git Graph ajuda a visualizar o histórico
+✔ a lógica do Git é a mesma dentro e fora do editor
 
----
- Git Flow — prática e padrões utilizados
+Git Flow — prática e padrões utilizados
 
-Neste momento do estudo, foi introduzido o **Git Flow**, seguindo padrões de mercado para organização de branches e commits.
+Foi introduzido o Git Flow, seguindo padrões de mercado para organização de branches e commits.
 
----
+Estrutura básica do Git Flow utilizada
 
-## Estrutura básica do Git Flow utilizada
+main → branch de produção
 
-O fluxo seguido foi:
+develop → branch de desenvolvimento
 
-- `main` → branch de produção
-- `develop` → branch de desenvolvimento
-- `feature/docs` → branches temporárias para alterações específicas
+branches temporárias (docs/*, feat/*)
 
 Fluxo geral:
 
-✔ tudo começa na `main`  
-✔ a `develop` recebe as mudanças em andamento  
-✔ após finalização e testes, a `develop` é integrada à `main`  
+✔ tudo começa na main
+✔ a develop recebe as mudanças em andamento
+✔ após finalização e testes, a develop é integrada à main
 
----
-
-## Trabalhando fora da main (boa prática)
+Trabalhando fora da main (boa prática)
 
 Antes de iniciar qualquer alteração:
 
-```bash
 git pull origin develop
+
+
 ✔ garante que a branch develop esteja atualizada
 ✔ evita conflitos futuros
 
 No VS Code, a branch develop foi utilizada como base para o trabalho.
 
- Padrão de nomeação de branches
+Padrão de nomeação de branches
+
 Foram utilizados padrões amplamente adotados pela comunidade:
 
- Alterações de documentação
-bash
-Copiar código
 git checkout -b docs/readme
+
+
 Prefixos utilizados:
 
 docs/ → documentação
@@ -488,20 +478,20 @@ feat/ → novas funcionalidades
 Esses padrões facilitam a leitura e organização do projeto.
 
 Padrão de mensagens de commit (commit pattern)
+
 Foi seguido o padrão de commits semânticos:
 
 docs: → mudanças em documentação
 
 feat: → novas funcionalidades
 
-Exemplo de commit para documentação:
+Exemplos:
 
 docs: teste
-
-Exemplo de commit para funcionalidade:
-
 feat: ola mundo em python
+
 Pull Request para a develop
+
 Após o commit:
 
 1️⃣ a branch foi publicada no GitHub
@@ -513,44 +503,50 @@ Após o commit:
 Esse fluxo mantém o repositório organizado.
 
 Exemplo prático com código Python
-Foi criado um novo arquivo Python seguindo o mesmo processo:
+
+Criação de uma nova feature:
 
 git checkout -b feat/ola-mundo
+
+
 Conteúdo do arquivo:
 
 print("ola mundo")
-O commit foi feito diretamente pelo Source Control do VS Code:
+
+
+Commit realizado pelo Source Control do VS Code:
 
 feat: ola mundo em python
+
+
 A branch foi publicada e integrada à develop.
 
 Integração final com a main
-Após todas as mudanças estarem consolidadas na develop, foi realizado:
+
+Após todas as mudanças estarem consolidadas na develop:
 
 git checkout main
 git merge develop
+
+
 ✔ a main foi atualizada
 ✔ o fluxo do Git Flow foi concluído corretamente
 
 Aprendizados importantes sobre Git Flow
+
 ✔ nunca trabalhar diretamente na main
 ✔ sempre atualizar a develop antes de começar
 ✔ usar padrões de branch e commit
 ✔ integrar primeiro na develop, depois na main
 
-----
+Próximos tópicos planejados
 
+Gitkeep
 
-/## Próximos tópicos planejados
+Gitignore
 
+Objetivo do repositório
 
-- **Gitkeep e Gitignore**
-
----
- Objetivo do repositório:
-
-✔ consolidar fundamentos do Git  
-✔ registrar evolução dos estudos  
+✔ consolidar fundamentos do Git
+✔ registrar evolução dos estudos
 ✔ servir como guia de consulta rápida
-
-
