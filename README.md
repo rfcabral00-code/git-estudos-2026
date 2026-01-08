@@ -290,7 +290,7 @@ Neste dia, o foco foi aprofundar o uso de branches, entender conflitos, trabalha
 
 ---
 
-## 🌿 Branches (revisão e aprofundamento)
+## Branches (revisão e aprofundamento)
 
 Branches permitem desenvolver funcionalidades de forma isolada, sem impactar diretamente a branch principal (`main`).
 
@@ -439,10 +439,111 @@ Isso mostrou que o VS Code não substitui o Git, mas facilita o uso.
 ✔ a lógica do Git é a mesma dentro e fora do editor  
 
 ---
+ Git Flow — prática e padrões utilizados
+
+Neste momento do estudo, foi introduzido o **Git Flow**, seguindo padrões de mercado para organização de branches e commits.
+
+---
+
+## Estrutura básica do Git Flow utilizada
+
+O fluxo seguido foi:
+
+- `main` → branch de produção
+- `develop` → branch de desenvolvimento
+- `feature/docs` → branches temporárias para alterações específicas
+
+Fluxo geral:
+
+✔ tudo começa na `main`  
+✔ a `develop` recebe as mudanças em andamento  
+✔ após finalização e testes, a `develop` é integrada à `main`  
+
+---
+
+## Trabalhando fora da main (boa prática)
+
+Antes de iniciar qualquer alteração:
+
+```bash
+git pull origin develop
+✔ garante que a branch develop esteja atualizada
+✔ evita conflitos futuros
+
+No VS Code, a branch develop foi utilizada como base para o trabalho.
+
+ Padrão de nomeação de branches
+Foram utilizados padrões amplamente adotados pela comunidade:
+
+ Alterações de documentação
+bash
+Copiar código
+git checkout -b docs/readme
+Prefixos utilizados:
+
+docs/ → documentação
+
+feat/ → novas funcionalidades
+
+Esses padrões facilitam a leitura e organização do projeto.
+
+Padrão de mensagens de commit (commit pattern)
+Foi seguido o padrão de commits semânticos:
+
+docs: → mudanças em documentação
+
+feat: → novas funcionalidades
+
+Exemplo de commit para documentação:
+
+docs: teste
+
+Exemplo de commit para funcionalidade:
+
+feat: ola mundo em python
+Pull Request para a develop
+Após o commit:
+
+1️⃣ a branch foi publicada no GitHub
+2️⃣ foi criado um Pull Request
+3️⃣ a base do PR foi alterada para develop
+4️⃣ o merge foi realizado
+5️⃣ a branch temporária (docs/readme) foi excluída
+
+Esse fluxo mantém o repositório organizado.
+
+Exemplo prático com código Python
+Foi criado um novo arquivo Python seguindo o mesmo processo:
+
+git checkout -b feat/ola-mundo
+Conteúdo do arquivo:
+
+print("ola mundo")
+O commit foi feito diretamente pelo Source Control do VS Code:
+
+feat: ola mundo em python
+A branch foi publicada e integrada à develop.
+
+Integração final com a main
+Após todas as mudanças estarem consolidadas na develop, foi realizado:
+
+git checkout main
+git merge develop
+✔ a main foi atualizada
+✔ o fluxo do Git Flow foi concluído corretamente
+
+Aprendizados importantes sobre Git Flow
+✔ nunca trabalhar diretamente na main
+✔ sempre atualizar a develop antes de começar
+✔ usar padrões de branch e commit
+✔ integrar primeiro na develop, depois na main
+
+----
+
 
 /## Próximos tópicos planejados
 
-- **Git Flow**
+
 - **Gitkeep e Gitignore**
 
 ---
@@ -453,4 +554,3 @@ Isso mostrou que o VS Code não substitui o Git, mas facilita o uso.
 ✔ servir como guia de consulta rápida
 
 
-obrigado ttheomewhy
