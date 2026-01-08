@@ -283,12 +283,100 @@ git branch -D nome-da-branch
 ✔ faça merge somente quando concluir  
 ✔ exclua branch após integrar
 
-Próximos tópicos planejados
+
+# Dia 3 — Branches, Conflitos e GitHub 
+
+Neste dia, o foco foi aprofundar o uso de branches, entender conflitos, trabalhar melhor com o GitHub e aprender sobre forks.
+
+---
+
+## 🌿 Branches (revisão e aprofundamento)
+
+Branches permitem desenvolver funcionalidades de forma isolada, sem impactar diretamente a branch principal (`main`).
+
+### Criar uma branch e entrar nela
+```bash
+git checkout -b nome-da-branch
+Listar branches
+git branch
+
+Voltar para a branch principal
+git checkout main
+
+### Merge — unindo branches
+
+O merge é usado para trazer o conteúdo de uma branch para outra.
+
+Fluxo correto:
+
+git checkout main
+git merge nome-da-branch
 
 
-- **Resolvendo conflitos**
-- **Pull Request**
-- **Criando Fork**
+✔ o conteúdo da branch secundária é integrado à main
+✔ os históricos são combinados
+
+### Resolvendo conflitos
+
+Conflitos acontecem quando:
+
+dois commits alteram a mesma linha de um arquivo
+
+o Git não sabe qual versão manter
+
+Fluxo para resolver conflitos
+
+1️⃣ o Git sinaliza o conflito
+2️⃣ o arquivo é marcado com indicadores (<<<<<<<, =======, >>>>>>>)
+3️⃣ o desenvolvedor escolhe o conteúdo correto
+4️⃣ o arquivo é salvo
+5️⃣ o conflito é marcado como resolvido
+
+git add arquivo-com-conflito
+git commit -m "Resolve conflito de merge"
+
+
+✔ conflitos são normais
+✔ fazem parte do fluxo real de trabalho
+
+## GitHub — uso mais aprofundado
+
+Neste dia foi estudado:
+
+✔ diferença entre repositório local e remoto
+✔ sincronização com push e pull
+✔ importância de sempre atualizar antes de enviar mudanças
+
+## Fluxo recomendado:
+
+git pull
+git add .
+git commit -m "mensagem"
+git push
+
+## Forks — contribuindo em outros projetos
+
+Fork é uma cópia de um repositório de outra pessoa para a sua conta no GitHub.
+
+Fluxo básico:
+
+1️⃣ criar um fork no GitHub
+2️⃣ clonar o fork para o computador
+3️⃣ criar uma branch para alterações
+4️⃣ enviar commits para o fork
+5️⃣ abrir um Pull Request
+
+✔ usado para contribuir em projetos open source
+✔ não altera o repositório original diretamente
+
+## Aprendizados importantes do Dia 3
+
+✔ trabalhar sempre em branches
+✔ conflitos fazem parte do processo
+✔ GitHub é mais que apenas um “backup”
+✔ forks permitem colaboração sem acesso direto
+
+/## Próximos tópicos planejados
 - **Integração com VS Code**
 - **Git Flow**
 - **Gitkeep e Gitignore**
