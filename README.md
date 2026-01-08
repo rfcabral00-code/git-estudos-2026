@@ -1,14 +1,14 @@
 # git-estudos-2026
 Estudos sobre Git
 
-📘 Guia de Estudos de Git — Passo a Passo para Iniciantes
+Guia de Estudos de Git — Passo a Passo para Iniciantes
 
 Este repositório reúne minhas anotações e prática inicial de Git.  
 O objetivo é entender **o que cada comando faz**, quando usar e como funciona o fluxo de versionamento.
 
 ---
 
-## 🎯 O que é o Git (em poucas palavras)
+## O que é o Git (em poucas palavras)
 
 Git é um sistema de controle de versão que permite:
 
@@ -19,7 +19,7 @@ Git é um sistema de controle de versão que permite:
 
 ---
 
-# 🖥️ 1) Navegando pelo terminal
+# 1) Navegando pelo terminal
 
 | Comando | Explicação |
 |--------|---------|
@@ -31,7 +31,7 @@ Git é um sistema de controle de versão que permite:
 | `nano nome.txt` | cria/edita um arquivo |
 | `cat nome.txt` | exibe o conteúdo do arquivo |
 
-⚠️ Atenção
+ Atenção
 
 | Comando | O que faz |
 |--------|---------|
@@ -39,7 +39,7 @@ Git é um sistema de controle de versão que permite:
 
 ---
 
-# 🌱 2) Iniciando um repositório Git
+# 2) Iniciando um repositório Git
 
 Criar repositório:
 
@@ -61,7 +61,7 @@ Legenda:
 
 ---
 
-# 🧩 3) Ciclo básico do Git
+# 3) Ciclo básico do Git
 
 Editar arquivos → adicionar ao stage → criar commit
 
@@ -99,7 +99,7 @@ Corrige explicação do git status
 
 ---
 
-# 📜 4) Consultando histórico
+# 4) Consultando histórico
 
 Histórico completo:
 
@@ -115,7 +115,7 @@ git log --oneline
 
 ---
 
-# 🌐 5) Conectando ao GitHub
+# 5) Conectando ao GitHub
 
 Definir branch principal:
 
@@ -143,7 +143,7 @@ git push
 
 ---
 
-# 💻 6) Usando o repositório em outro computador
+# 6) Usando o repositório em outro computador
 
 Clonar:
 
@@ -160,7 +160,7 @@ git pull
 
 ---
 
-# 🔁 7) Fluxo recomendado de trabalho
+# 7) Fluxo recomendado de trabalho
 
 Sempre seguir:
 
@@ -178,13 +178,13 @@ git push
 
 ---
 
-# 🌿 Estudo Prático — Branches e Merge
+# Estudo Prático — Branches e Merge
 
 Branches permitem trabalhar em novas funcionalidades sem alterar a `main`.
 
 ---
 
-## ✨ O que é uma branch?
+## O que é uma branch?
 
 Uma branch é uma cópia de trabalho onde você pode:
 
@@ -196,7 +196,7 @@ Depois, o conteúdo pode ser integrado com **merge**.
 
 ---
 
-## 🌱 Criar uma nova branch e entrar nela
+## Criar uma nova branch e entrar nela
 
 ```
 git checkout -b nome-da-branch
@@ -210,7 +210,7 @@ git checkout -b feature-anotacoes
 
 ---
 
-## 📋 Ver todas as branches
+## Ver todas as branches
 
 ```
 git branch
@@ -220,7 +220,7 @@ A branch com `*` é a atual.
 
 ---
 
-## 🔁 Voltar para a main
+## Voltar para a main
 
 ```
 git checkout main
@@ -230,7 +230,7 @@ git checkout main
 
 ---
 
-## 🔀 Fazer merge (unir branches)
+## Fazer merge (unir branches)
 
 Ir para a branch que receberá as mudanças:
 
@@ -254,7 +254,7 @@ git merge feature-anotacoes
 
 ---
 
-## 🗑️ Excluir branch após merge
+## Excluir branch após merge
 
 Exclusão segura:
 
@@ -272,7 +272,7 @@ git branch -D nome-da-branch
 
 ---
 
-## 🧠 Boas práticas com branches
+## Boas práticas com branches
 
 ✔ uma branch por tarefa  
 ✔ commits pequenos e claros  
@@ -290,8 +290,7 @@ Próximos tópicos planejados
 - **Gitkeep e Gitignore**
 
 ---
-
-📌 Objetivo do repositório:
+ Objetivo do repositório:
 
 ✔ consolidar fundamentos do Git  
 ✔ registrar evolução dos estudos  
